@@ -1,0 +1,207 @@
+/* NO QUEREMOS QUE NINGUN ELEMENTO TENGA MARGIN 
+NI PADDING Y PODAMOS RESETEAR LOS ESTILOS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* QUITAMOS EL MARGEN POR DEFECTO DEL EXPLORADOR */
+body{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+a{
+        text-decoration: none;
+        cursor: pointer;
+ }
+
+/* VA EN TODO EL WIDTH DE LA PANTALLA QUE VA DE 0 A 100*/
+    header{ 
+        width: 100%;
+        height: 60px;
+        
+    }
+
+/* display flex sirve para justificar mi contenido*/
+header nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+}
+
+header nav .nav-right-section {
+            width: 250px;
+            height: auto;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+    
+    }  
+/* DAMOS ESPACIADO ENTRE NUESTROS ELEMENTOS DEL NAV*/        
+nav .nav-right-section a{
+        margin-right: 15px;
+        color: black;
+    }
+
+nav .nav-right-section .menu-icon { 
+  background-image: url('https://static.thenounproject.com/png/756729-200.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 15px;
+    }
+    
+
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+    }
+
+
+/* AQUÍ EMPIEZAN LOS ESTILOS DE LA ETIQUTA MAIN*/
+
+    main {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    main .main-logo {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 3px;
+    }
+
+    main .main-logo img {
+        width: 300px;
+        margin-top: 32px;
+
+    }
+
+    /* estilos para el input*/
+
+    main .main-input{
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    /* vamos al navegador para ver */
+
+    
+
+    main .main-input-container {
+        width: 525px;
+        border-radius: 100px;
+        border: solid 2px #dfe1e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    main .main-input input{
+        width: 450px;
+        height: 40px;
+        border: none;
+        outline: none;
+    }
+
+/* outline: es ese borde azul que sale en nuestro input */
+   
+
+/* ESTRUCTURA ETIQUETA MAIN */
+
+    /* PSEUDO-ELEMENTO*/
+    main .main-input-container:hover {
+        box-shadow: 0 1px 6px 0 #20212447;
+        border-color: #dfe1e500;
+    }
+
+/* PARA COLOCAR LOS ICONOS */
+main .main-input .search-icon {
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{
+  background-image:url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+    main .main-buttons {
+        width:  520px;
+        margin: 0 auto;
+    }
+
+    /*permite establecer un ancho y una altura en el elemento.*/
+    main .main-buttons div {
+        display: inline-block;
+    }
+
+    main .main-buttons button {
+            height: 36px;
+            background-color: #f2f2f2;
+            border: 0;
+            font-size: 14px;
+            color: #5f6385;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin-right: 20px;
+}
+
+main .main-buttons button:hover{
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px #c6c6c6;
+        color: #222;
+}
+
+
+/* ETIQUETA FOOTER */
+    footer {
+        width:  100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        display: grid; /* EL DISPLAY GRID SIRVE PARA GENERAR CUADRICULAS DONDE COLOCAMOS EL CONTENIDO DEL PROYECTO*/
+        grid-template-columns: 1fr 1fr; /* TEMPLATES DE LAS COLUMNAS QUE PODEMOS DIVIDIR EN FRACCIONES */
+        align-items: center;
+        font-size: 13px;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+
+footer ul {
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+}
+
+footer .footer-left{
+        justify-self: left;
+}
+
+footer .footer-right{
+        justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
